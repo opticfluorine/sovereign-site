@@ -1,24 +1,61 @@
+import Image from "next/image";
+import Screenshot from "../../public/screenshot-v0.1.0.png";
+import Link from "next/link";
+
+function HeroScreenshot() {
+    return (
+        <div className={"py-4 md:-mb-64"}>
+            <Image
+                src={Screenshot}
+                alt={"Screenshot of the Sovereign Engine client, v0.1.0."}
+                priority={true}
+            />
+        </div>
+    );
+}
+
+function IntroText() {
+    return (
+        <div className={"p-2 font-bold max-w-3xl"}>
+            <p className={"text-3xl pb-4 mr-8"}>
+                Build multiplayer RPGs with Sovereign Engine.
+            </p>
+            <ul className={"text-xl font-normal"}>
+                <li>Build your own multiplayer RPGs and MMORPGs with ease.</li>
+                <li>
+                    Create detailed worlds filled with towns, caves, dungeons, and more.
+                </li>
+                <li>Easily deploy a server and share your world with others.</li>
+            </ul>
+        </div>
+    );
+}
+
+function ReleaseInfo() {
+    return (
+        <div className={"p-4 rounded-xl bg-zinc-700/80 mt-4 md:mt-0 md:ml-auto"}>
+            <h1 className={"font-bold text-2xl"}>Latest Release: v0.1.0</h1>
+            <p>
+                Head over to the{" "}
+                <Link href={"/download"} className={"font-bold"}>
+                    Download
+                </Link>{" "}
+                page for more details.
+            </p>
+        </div>
+    );
+}
+
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className={"columns-1 md-columns-2"}>
-        <section className={"space-y-2"}>
-          <p>
-            Sovereign Engine is a 2.5D MMORPG engine with the 2D graphical style
-            of classic RPGs together with a 3D voxel-based world. The world is
-            highly dynamic and allows developers and players alike the ability
-            to build homes, mine for resources, farm the land, and delve into
-            dungeons. Currently in early development, Sovereign will make it
-            easy to create and share multiplayer RPGs.
-          </p>
-          <p>
-            Sovereign is developed in C#, runs on Windows and Linux, and is easy
-            to extend through its distributed Entity-Component-System (ECS)
-            framework.
-          </p>
-          <p>Sovereign Engine is made available under the GPLv3 license.</p>
-        </section>
-      </div>
-    </main>
-  );
+    return <section className={"space-y-2 max-w-screen-xl flex flex-col flex-grow"}>
+        <HeroScreenshot/>
+        <div
+            className={
+                "p-4 flex flex-col md:flex-row flex-grow bg-gradient-to-b from-zinc-600/40 via-zinc-600/60 to-zinc-600 min-h-64"
+            }
+        >
+            <IntroText/>
+            <ReleaseInfo/>
+        </div>
+    </section>;
 }
