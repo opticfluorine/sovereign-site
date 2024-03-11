@@ -34,7 +34,7 @@ function IntroText() {
 function ReleaseInfo() {
     return (
         <div className={"p-4 rounded-xl bg-zinc-700/80 mt-4 md:mt-0 md:ml-auto"}>
-            <h1 className={"font-bold text-2xl"}>Latest Release: v0.1.0</h1>
+            <h1 className={"font-bold text-2xl"}>Latest Release: v0.2.0</h1>
             <p>
                 Head over to the{" "}
                 <Link href={"/download"} className={"font-bold"}>
