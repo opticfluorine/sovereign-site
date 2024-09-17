@@ -1,6 +1,7 @@
 import Image, {StaticImageData} from "next/image";
 import Section from "@/ui/section";
 
+import ScreenshotV040 from '../../../public/screenshot-v0.4.0.png';
 import ScreenshotV010 from '../../../public/screenshot-v0.1.0.png';
 
 /** Type describing a screenshot in the gallery. */
@@ -12,6 +13,14 @@ interface ImageRecord {
 
 /** List of screenshots to include in the gallery. */
 const imageRecords: ImageRecord[] = [
+    {
+        image: ScreenshotV040,
+        title: "Sovereign Engine v0.4.0",
+        description: <>
+            Screenshot of Sovereign Engine v0.4.0 showing a player character in a small world demonstrating
+            layered blocks and the new block graphics.
+        </>
+    },
     {
         image: ScreenshotV010,
         title: "Sovereign Engine v0.1.0",
