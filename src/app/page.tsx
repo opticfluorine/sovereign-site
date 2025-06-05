@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Screenshot from "../../public/screenshot-v0.5.0.png";
+import Screenshot from "../../public/screenshot-v0.6.0.png";
 import Link from "next/link";
 
 function HeroScreenshot() {
@@ -7,7 +7,7 @@ function HeroScreenshot() {
     <div className={"py-4 md:-mb-64"}>
       <Image
         src={Screenshot}
-        alt={"Screenshot of the Sovereign Engine client, v0.5.0."}
+        alt={"Screenshot of the Sovereign Engine client, v0.6.0."}
         priority={true}
       />
     </div>
@@ -38,9 +38,9 @@ function ReleaseInfo() {
         "p-4 mt-4 md:mt-0 md:ml-auto rounded-lg bg-white/5 backdrop-blur-md border border-slate-400/30 shadow-lg shadow-slate-400/10"
       }
     >
-      <h1 className={"font-bold text-2xl"}>Latest Release: v0.5.0</h1>
+      <h1 className={"font-bold text-2xl"}>Latest Release: v0.6.0</h1>
       <p>
-        Head over to the{" "}
+        Visit the{" "}
         <Link href={"/download"} className={"font-bold"}>
           Download
         </Link>{" "}

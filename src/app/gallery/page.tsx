@@ -1,6 +1,7 @@
 import Image, {StaticImageData} from "next/image";
 import Section from "@/ui/section";
 
+import ScreenshotV060 from "../../../public/screenshot-v0.6.0.png";
 import ScreenshotV050 from "../../../public/screenshot-v0.5.0.png";
 import ScreenshotV040 from "../../../public/screenshot-v0.4.0.png";
 import ScreenshotV010 from "../../../public/screenshot-v0.1.0.png";
@@ -16,6 +17,17 @@ interface ImageRecord {
 /** List of screenshots to include in the gallery. */
 const imageRecords: ImageRecord[] = [
   {
+    image: ScreenshotV060,
+    title: "Sovereign Engine v0.6.0",
+    description: (
+      <>
+        Screenshot of Sovereign Engine v0.6.0 showing a player character at sunrise,
+        demonstrating the new day/night cycle and calendar system.
+      </>
+    ),
+    priority: true,
+  },
+  {
     image: ScreenshotV050,
     title: "Sovereign Engine v0.5.0",
     description: (
@@ -25,7 +37,7 @@ const imageRecords: ImageRecord[] = [
         shadow features in v0.5.0.
       </>
     ),
-    priority: true,
+    priority: false,
   },
   {
     image: ScreenshotV040,

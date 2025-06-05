@@ -7,7 +7,7 @@ export default function DownloadPage() {
       <h1 className={"text-3xl font-bold p-4"}>Downloads</h1>
       <Section className={"max-w-screen-md"}>
         <h2 className={"text-2xl font-bold"}>
-          Current Release: Sovereign Engine v0.5.0
+          Current Release: Sovereign Engine v0.6.0
         </h2>
         <div className={"p-4"}>
           <p className={"mb-4"}>
@@ -16,36 +16,27 @@ export default function DownloadPage() {
           </p>
 
           <ul className={"list-disc"}>
-            <li>Added dynamic lighting and shadows</li>
-            <li>Added Lua 5.4 as a server-side scripting language</li>
-            <li>Display player name above each player in game</li>
-            <li>Fix various graphical bugs in renderer</li>
-            <li>Improved database performance</li>
+            <li>Added physics and collisions</li>
+            <li>Added in-game calendar with day/night cycle</li>
+            <li>Improved world editor UI/UX</li>
+            <li>Network performance improvements</li>
+            <li>Various lighting and shadow fixes</li>
+            <li>Added support for running server as Windows Service or systemd service</li>
+            <li>Added Windows installer for client and server</li>
           </ul>
         </div>
         <div>
           <h3 className={"text-2xl font-bold"}>Download</h3>
           <ul>
             <li>
-              Client (Windows 64-bit):{" "}
+              Installer (Windows 64-bit):{" "}
               <Link
                 className={"font-bold"}
                 href={
-                  "https://github.com/opticfluorine/sovereign/releases/download/v0.5.0/SovereignClient-v0.5.0-win-x64.zip"
+                  "https://github.com/opticfluorine/sovereign/releases/download/v0.6.0/Sovereign_Install_v0.6.0.exe"
                 }
               >
-                SovereignClient-v0.5.0-win-x64.zip
-              </Link>
-            </li>
-            <li>
-              Server (Windows 64-bit):{" "}
-              <Link
-                className={"font-bold"}
-                href={
-                  "https://github.com/opticfluorine/sovereign/releases/download/v0.5.0/SovereignServer-v0.5.0-win-x64.zip"
-                }
-              >
-                SovereignServer-v0.5.0-win-x64.zip
+                Sovereign_Install_v0.6.0.exe
               </Link>
             </li>
             <li>
@@ -53,10 +44,10 @@ export default function DownloadPage() {
               <Link
                 className={"font-bold"}
                 href={
-                  "https://github.com/opticfluorine/sovereign/releases/download/v0.5.0/SovereignClient-v0.5.0-linux-x64.tar.gz"
+                  "https://github.com/opticfluorine/sovereign/releases/download/v0.6.0/SovereignClient-v0.6.0-linux-x64.tar.gz"
                 }
               >
-                SovereignClient-v0.5.0-linux-x64.tar.gz
+                SovereignClient-v0.6.0-linux-x64.tar.gz
               </Link>
             </li>
             <li>
@@ -64,10 +55,10 @@ export default function DownloadPage() {
               <Link
                 className={"font-bold"}
                 href={
-                  "https://github.com/opticfluorine/sovereign/releases/download/v0.5.0/SovereignServer-v0.5.0-linux-x64.tar.gz"
+                  "https://github.com/opticfluorine/sovereign/releases/download/v0.6.0/SovereignServer-v0.6.0-linux-x64.tar.gz"
                 }
               >
-                SovereignServer-v0.5.0-linux-x64.tar.gz
+                SovereignServer-v0.6.0-linux-x64.tar.gz
               </Link>
             </li>
             <li>
@@ -75,10 +66,10 @@ export default function DownloadPage() {
               <Link
                 className={"font-bold"}
                 href={
-                  "https://github.com/opticfluorine/sovereign/archive/refs/tags/v0.5.0.zip"
+                  "https://github.com/opticfluorine/sovereign/archive/refs/tags/v0.6.0.zip"
                 }
               >
-                sovereign-v0.5.0.zip
+                sovereign-v0.6.0.zip
               </Link>
             </li>
             <li>
@@ -86,10 +77,10 @@ export default function DownloadPage() {
               <Link
                 className={"font-bold"}
                 href={
-                  "https://github.com/opticfluorine/sovereign/archive/refs/tags/v0.5.0.tar.gz"
+                  "https://github.com/opticfluorine/sovereign/archive/refs/tags/v0.6.0.tar.gz"
                 }
               >
-                sovereign-v0.5.0.tar.gz
+                sovereign-v0.6.0.tar.gz
               </Link>
             </li>
           </ul>
